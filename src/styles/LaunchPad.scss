@@ -1,0 +1,116 @@
+
+
+.launchpad {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    color: var(--white);
+
+
+    p {
+        text-align: center;
+    }
+
+    .launch-sequence {
+        margin: 3em;
+
+
+        p {
+            font-size: 1.4em;
+            color: var(--white);
+            margin: 0;
+            line-height: 1.2em;
+            padding: 10px 0px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+        }
+
+        .chosen-astronaut{ 
+            display: flex;
+            justify-content: center;
+        }
+
+        .astronautName {
+            font-size: 4em;
+            text-align: center;
+            color: var(--white);
+            margin: 0 10px;
+
+            &.boy {
+                color: var(--color-boy);
+            }
+
+            &.girl {
+                color: var(--color-girl);
+            }
+
+            &.completed {
+                font-size: 2em;
+            }
+
+        }
+
+        .badge {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        .planetName {
+            font-family: "BlackOpsOne-Regular";
+            font-size: 3.5em;
+            text-align: center;
+           
+        }
+
+        .timer {
+            font-family: "Orbitron";
+            color: var(--color-timer);
+            text-align: center;
+            margin-top: 1em;
+            font-size: 5em;
+
+            &.complete {
+                font-family: "Bangers";
+                color: var(--color-blastoff);
+            }
+        }
+    }
+
+}
+
+
+button.launch {
+    color: var(--white) !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: var(--color-launch-button-red);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    font-weight: 700;
+    transition: all 0.4s ease 0s;
+
+    &.green {
+        background: var(--color-launch-button-green);
+    }
+
+    &:hover {
+        background: var(--color-button-hover);
+        cursor: pointer;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px var(--color-button-box-shadow);
+        -moz-box-shadow: 0px 5px 40px -10px var(--color-button-box-shadow);
+        box-shadow: 5px 40px -10px var(--color-button-box-shadow);
+        transition: all 0.4s ease 0s;
+    }
+
+    &:active {
+        box-shadow: none;
+        margin-top: 10px;
+    }
+}

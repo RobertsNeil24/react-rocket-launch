@@ -1,0 +1,40 @@
+
+
+@font-face {
+    font-family: 'Orbitron';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Orbitron-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'BarlowCondensed-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/BarlowCondensed-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Bangers';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Bangers-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'BlackOpsOne-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/BlackOpsOne-Regular.ttf') format('truetype');
+  }
+
+body {
+  margin: 0;
+  font-family: "BarlowCondensed-Regular", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import './variables.scss';
+@import './LaunchPad.scss';
+@import './Rocket.scss';
